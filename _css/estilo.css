@@ -34,3 +34,33 @@ figure.foto-legenda figcaption {
 figure.foto-legenda:hover figcaption { /*Mostra a legenda da imagem ao passar o mouse*/
 	opacity: 1;
 }
+
+/*Formatação do Menu*/
+
+nav#menu {
+	display: block; /**Para que o menu flutue pela tela*/
+}
+nav#menu ul {
+	list-style: none; /*Remove os marcadores do menu*/
+	text-transform: uppercase; /*Deixa todas as letras em caixa alta*/
+	position: absolute; /*Para que o menu passa por cima dos outros elementos, posso andar com o menu*/
+	top: -20px;
+	left: 300px;
+}
+nav#menu li {
+	display: inline-block; /*Alinha o menu em uma unica linha*/
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;	
+}
+nav#menu li:hover {
+	background-color: #606060;
+}
+nav#menu h1 {
+	display: none;
+}
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}
