@@ -20,6 +20,7 @@ figure.foto-legenda img {
 	height: 100%;
 }
 figure.foto-legenda figcaption {
+	opacity: 0; /*escondendo a legenda*/
 	position: absolute;
 	top: 0px;
 	background-color: rgba(0,0,0,0.2); /*rgba para transparencia*/
@@ -28,4 +29,8 @@ figure.foto-legenda figcaption {
 	height: 100%;
 	padding: 10px;
 	box-sizing: border-box;
+	transition: opacity 1s; /*Tempo de transição da legenda da imagem*/
+}
+figure.foto-legenda:hover figcaption { /*Mostra a legenda da imagem ao passar o mouse*/
+	opacity: 1;
 }
