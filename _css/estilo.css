@@ -1,8 +1,14 @@
 @charset "UTF-8";
 
 boyd {
-	background-color: white;
+	background-color: #dddddd;
 	}
+
+div#interface {
+	width: 800px;
+	background-color: #ffffff;
+}
+
 
 p {
 	text-align: justify;
