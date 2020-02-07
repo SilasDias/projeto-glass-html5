@@ -1,19 +1,26 @@
 @charset "UTF-8";
 
-boyd {
+body {
 	background-color: #dddddd;
+	color: rgba(0,0,0,1);
 	}
 
 div#interface {
-	width: 800px;
-	background-color: #ffffff;
+	width: 900px;
+	background-color: #FFFFFF;
+	margin: -20px auto 0px auto; /*Posiçao do site enquanto pagina*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	padding: 10px 10px 10px 10px;
 }
-
 
 p {
 	text-align: justify;
 	text-indent: 50px;
 	}
+
+header#cabecalho img#icone { /*Movendo o imagem para o canto direito superior*/
+	position: absolute;  
+}
 
 /*Formatação de imagens com legenda*/
 figure.foto-legenda {
