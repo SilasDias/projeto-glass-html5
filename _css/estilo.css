@@ -19,7 +19,13 @@ p {
 	}
 
 header#cabecalho img#icone { /*Movendo o imagem para o canto direito superior*/
-	position: absolute;  
+	position: absolute;
+	left: 800px;
+	top: 50px;
+}
+
+header#cabecalho {
+	
 }
 
 /*Formatação de imagens com legenda*/
