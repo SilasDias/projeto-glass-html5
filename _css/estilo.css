@@ -11,7 +11,7 @@ body {
 	}
 
 div#interface {
-	width: 800px;
+	width: 900px;
 	background-color: #FFFFFF;
 	margin: -20px auto 0px auto; /*Posiçao do site enquanto pagina*/
 	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
@@ -25,8 +25,8 @@ p {
 
 header#cabecalho img#icone { /*Movendo o imagem para o canto direito superior*/
 	position: absolute;
-	left: 800px;
-	top: 70px;
+	left: 960px;
+	top: 85px;
 }
 
 header#cabecalho {
@@ -88,7 +88,7 @@ nav#menu ul {
 	text-transform: uppercase; /*Deixa todas as letras em caixa alta*/
 	position: absolute; /*Para que o menu passa por cima dos outros elementos, posso andar com o menu*/
 	top: -20px;
-	left: 300px;
+	left: 400px;
 }
 nav#menu li {
 	display: inline-block; /*Alinha o menu em uma unica linha*/
