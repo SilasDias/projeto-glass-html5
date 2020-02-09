@@ -11,7 +11,7 @@ body {
 	}
 
 div#interface {
-	width: 900px;
+	width: 800px;
 	background-color: #FFFFFF;
 	margin: -20px auto 0px auto; /*Posiçao do site enquanto pagina*/
 	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
