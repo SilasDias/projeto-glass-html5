@@ -28,6 +28,10 @@ ul#album-fotos li span {
 	padding: 5px;
 }
 
+ul#album-fotos li:hover span {
+	opacity: 1;
+}
+
 ul#album-fotos li#foto01 {
 	background: url("../_imagens/galeria-01.jpg") no-repeat;
 }
