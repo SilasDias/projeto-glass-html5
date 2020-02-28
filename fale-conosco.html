@@ -19,16 +19,16 @@
 	<h2>A revolução do Google está chegando</h2>
 	</hgroup>
 	
-	<img id="icone" src="_imagens/glass-oculos-preto-peq.png" alt="google-glass"/>
+	<img id="icone" src="_imagens/contato.png" alt="google-glass"/>
 
 	<nav id="menu">
 	<h1>Menu Principal</h1>
 	<ul>
-		<li onMouseOver="mudaFoto('_imagens/home.png')" onMouseOut="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
-		<li onMouseOver="mudaFoto('_imagens/especificacoes.png')" onMouseOut="mudaFoto('_imagens/glass-oculos-preto-peq.png')" ><a href="specs.html">Especificações</a></li>
-		<li onMouseOver="mudaFoto('_imagens/fotos.png')" onMouseOut="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
-		<li onMouseOver="mudaFoto('_imagens/multimidia.png')" onMouseOut="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
-		<li onMouseOver="mudaFoto('_imagens/contato.png')" onMouseOut="mudaFoto('_imagens/glass-oculos-preto-peq.png')" ><a href="fale-conosco.html">Fale conosco</a></li>
+		<li onMouseOver="mudaFoto('_imagens/home.png')" onMouseOut="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+		<li onMouseOver="mudaFoto('_imagens/especificacoes.png')" onMouseOut="mudaFoto('_imagens/contato.png')" ><a href="specs.html">Especificações</a></li>
+		<li onMouseOver="mudaFoto('_imagens/fotos.png')" onMouseOut="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+		<li onMouseOver="mudaFoto('_imagens/multimidia.png')" onMouseOut="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+		<li onMouseOver="mudaFoto('_imagens/contato.png')" onMouseOut="mudaFoto('_imagens/contato.png')" ><a href="fale-conosco.html">Fale conosco</a></li>
 	</ul>
 	</nav>
 	</header>
@@ -46,33 +46,42 @@
 
 	
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<form>
+	
+	<fieldset id="usuario"><legend>Identificação do Usuário</legend>
+    <p><label for="cName">Nome:</label><input type="text" name="tName" id="cName" size="20" maxlength="30" placeholder="Nome Completo" /></p>
+    <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Digitos" /></p>
+    <p><label for="cMail">E-mail:</label><input type="email" name="tMail" id="cMail" size="" maxlength="" placeholder="Digite seu e-mail"/></p>
+    <fieldset id="sexo"><legend>Sexo:</legend>
+       <input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label><br/> <!-- Precisar ter o mesmo NAME para funcionar selecao-->
+        <input type="radio" name="tSexo" id="cFem" /><label for="cFem">Feminino</label></fieldset>
+    <p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc"/> </p>
+	</fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+	<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+    <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="rua, avenida, travessa..." /></p>
+	<p><label for="cNumero">Número:</label><input type="number" name="tNumero" id="cNumero" min="0" max="99999" placeholder="nº" /></p>
+    <p><label for="cEst">Estado:</labe></p>
+    <p><label for="cCid">Cidade:</label></p>
+	</fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+	<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+    <p><label for="cUrg" >Grau de Urgência:</label></p>
+    <p><label for="cMsg">Mensagem:</label></p>
+	</fieldset>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+	<fieldset id="pedido"><legend>Quero um Google Glass</legend>
+    <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+    <p><label for="cCor">Cor:</label></p>
+    <p><label for="cQtd">Quantidade:</label></p>
+    <p><label for="cTot">Preço Total: R$</label></p>
+	
+	</fieldset>
 
 
 [BOTÃO ENVIAR]
+	
+</form>
 	
 </article>	
 </section>
