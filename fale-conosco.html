@@ -46,7 +46,7 @@
 
 	
 
-<form>
+<form method="get" id="fContato" action="mailto:contato@cursoemvideo.com.br">
 	
 	<fieldset id="usuario"><legend>Identificação do Usuário</legend>
     <p><label for="cName">Nome:</label><input type="text" name="tName" id="cName" size="20" maxlength="30" placeholder="Nome Completo" /></p>
@@ -60,9 +60,24 @@
 
 	<fieldset id="endereco"><legend>Endereço do Usuário</legend>
     <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="rua, avenida, travessa..." /></p>
-	<p><label for="cNumero">Número:</label><input type="number" name="tNumero" id="cNumero" min="0" max="99999" placeholder="nº" /></p>
-    <p><label for="cEst">Estado:</labe></p>
-    <p><label for="cCid">Cidade:</label></p>
+	<p><label for="cNumero">Número:</label><input type="number" name="tNumero" id="cNumero" min="0" max="9999" placeholder="nº" /></p>
+    <p><label for="cEst">Estado:</label>
+		<select name="tEst" id="cEst">
+			<optgroup label="Região Sudeste">
+				<option>Espírito Santo</option>
+				<option>Minas Gerais</option>
+				<option>Rio de Janeiro</option>
+				<option selected>São Paulo</option>
+			</optgroup>
+			
+			<optgroup label="Região Sul">
+				<option>Paraná</option>
+				<option>Rio Grande do Sul</option>
+				<option>Santa Catarina</option>
+			</optgroup>
+			
+		</select></p>
+    <p><label for="cCid">Cidade:<input type="text" name="tCid" id="cCid" size="10" maxlength="50" placeholder="cidade" /></label></p>
 	</fieldset>
 
 	<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
