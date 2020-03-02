@@ -106,16 +106,19 @@
 			</optgroup>
 			
 		</select></p>
-    <p><label for="cCid">Cidade:<input type="text" name="tCid" id="cCid" size="10" maxlength="40" placeholder="Sua Cidade" />
+    <p><label for="cCid">Cidade:<input type="text" name="tCid" id="cCid" size="10" maxlength="40" placeholder="Sua Cidade" list="cidade" />
 		<datalist id="cidade">
-			<option value="Rio de Janeiro"></option>
+			<option value="Belford Roxo"></option>
+			<option value="Niterói"></option>
 			<option value="Nova Iguaçu"></option>
+			<option value="Rio de Janeiro"></option>
 		</datalist>
 		</label></p>
 	</fieldset>
 
 	<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
-    <p><label for="cUrg" >Grau de Urgência:</label></p>
+    <p><label for="cUrg" >Grau de Urgência:</label>
+		Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Máx</p>
     <p><label for="cMsg">Mensagem:</label></p>
 	</fieldset>
 
