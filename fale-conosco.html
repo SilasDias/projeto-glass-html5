@@ -124,10 +124,10 @@
 	</fieldset>
 
 	<fieldset id="pedido"><legend>Quero um Google Glass</legend>
-    <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
-    <p><label for="cCor">Cor:</label></p>
-    <p><label for="cQtd">Quantidade:</label></p>
-    <p><label for="cTot">Preço Total: R$</label></p>
+    <p><input type="checkbox" name="tPed" id="cPed" checked /><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+    <p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor" value="#0000ff"></p>
+    <p><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"></p>
+    <p><label for="cTot">Preço Total: R$</label><input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly /></p>
 	
 	</fieldset>
 
